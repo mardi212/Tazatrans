@@ -6,27 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ste SOUS TAZA TRANS</title>
   <style>
-    body { margin:0; font-family:sans-serif; background:#fff; color:#000; direction:rtl; line-height:1.6; }
-    header { background: linear-gradient(90deg,#28a745,#fff,#dc3545); color:#fff; text-align:center; padding:40px 20px; }
-    header h1 { margin:0; font-size:2em; }
-    header p { font-size:1.1em; color:#000; }
-    nav { background:#333; padding:10px; text-align:center; position:sticky; top:0; z-index:100; }
-    nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; font-size:0.9em; }
-    section { padding:50px 20px; max-width:800px; margin:auto; }
-    .services div { margin:20px 0; font-size:1em; }
-    .contact input, .contact textarea { width:100%; padding:10px; margin:10px 0; box-sizing:border-box; }
-    .contact button { background:#28a745; color:#fff; border:none; padding:12px 25px; border-radius:5px; font-size:1em; cursor:pointer; }
-    .social { margin-top:15px; display:flex; justify-content:center; gap:15px; }
-    .social a { font-size:1.5em; color:#333; text-decoration:none; }
-    footer { text-align:center; padding:20px; background:#f1f1f1; font-size:0.9em; }
-    @media (max-width:600px) {
-      header h1 { font-size:1.5em; }
-      nav a { display:inline-block; margin:5px; }
-    }
-  </style>
-</head>
-<body>
-<!-- ضع هذا داخل <body> مباشرة بعد <header> -->
+ <!-- ضع هذا داخل <body> مباشرة بعد <header> -->
 <div class="slider">
   <img src="https://drive.google.com/uc?export=view&id=1U5M5HVLfI53VkShWLyPKtZjtkTfAMJ7t" class="slide active">
   <img src="https://drive.google.com/uc?export=view&id=1U9DVenO4HW5XXBzi8Kk5iNu2Gy9hUMHU" class="slide">
@@ -48,13 +28,33 @@
     idx = (idx + 1) % slides.length;
     slides[idx].classList.add('active');
   }, 4000);
-</script>  
+</script>   
+    body { margin:0; font-family:sans-serif; background:#fff; color:#000; direction:rtl; line-height:1.6; }
+    header { background: linear-gradient(90deg,#28a745,#fff,#dc3545); color:#fff; text-align:center; padding:40px 20px; }
+    header h1 { margin:0; font-size:2em; }
+    header p { font-size:1.1em; color:#000; }
+    nav { background:#333; padding:10px; text-align:center; position:sticky; top:0; z-index:100; }
+    nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; font-size:0.9em; }
+    section { padding:50px 20px; max-width:800px; margin:auto; }
+    .services div { margin:20px 0; font-size:1em; }
+    .contact input, .contact textarea { width:100%; padding:10px; margin:10px 0; box-sizing:border-box; }
+    .contact button { background:#28a745; color:#fff; border:none; padding:12px 25px; border-radius:5px; font-size:1em; cursor:pointer; }
+    .social { margin-top:15px; display:flex; justify-content:center; gap:15px; }
+    .social a { font-size:1.5em; color:#333; text-decoration:none; }
+    footer { text-align:center; padding:20px; background:#f1f1f1; font-size:0.9em; }
+    @media (max-width:600px) {
+      header h1 { font-size:1.5em; }
+      nav a { display:inline-block; margin:5px; }
+    }
+  </style>
+</head>
+<body>
   <header>
     <div style="font-size:3em;">🟢 ⚪ 🔴 🚚</div>
     <h1>ste SOUS TAZA TRANS</h1>
     <p>نقل موثوق وخدمات لوجيستية محترفة</p>
   </header>
-div.slider
+ div.slider 
   <nav>
     <a href="#services">الخدمات</a>
     <a href="#about">من نحن</a>
