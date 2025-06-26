@@ -6,29 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ste SOUS TAZA TRANS</title>
   <style>
- <!-- ضع هذا داخل <body> مباشرة بعد <header> -->
-<div class="slider">
-  <img src="https://drive.google.com/uc?export=view&id=1U5M5HVLfI53VkShWLyPKtZjtkTfAMJ7t" class="slide active">
-  <img src="https://drive.google.com/uc?export=view&id=1U9DVenO4HW5XXBzi8Kk5iNu2Gy9hUMHU" class="slide">
-  <!-- أضف بقية الصور بنفس الطريقة -->
-  <img src="https://drive.google.com/uc?export=view&id=1TiLqpvbLtuuNQVjzmgGJH_JmjIviZZoT" class="slide">
-</div>
-
-<style>
-  .slider { position: relative; width: 100%; height: 300px; overflow: hidden; }
-  .slide { position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; opacity: 0; transition: opacity 1s ease-in-out; }
-  .slide.active { opacity: 1; }
-</style>
-
-<script>
-  const slides = document.querySelectorAll('.slide');
-  let idx = 0;
-  setInterval(() => {
-    slides[idx].classList.remove('active');
-    idx = (idx + 1) % slides.length;
-    slides[idx].classList.add('active');
-  }, 4000);
-</script>   
     body { margin:0; font-family:sans-serif; background:#fff; color:#000; direction:rtl; line-height:1.6; }
     header { background: linear-gradient(90deg,#28a745,#fff,#dc3545); color:#fff; text-align:center; padding:40px 20px; }
     header h1 { margin:0; font-size:2em; }
@@ -54,6 +31,29 @@
     <h1>ste SOUS TAZA TRANS</h1>
     <p>نقل موثوق وخدمات لوجيستية محترفة</p>
   </header>
+<!-- ضع هذا داخل <body> مباشرة بعد <header> -->
+<div class="slider">
+  <img src="https://drive.google.com/uc?export=view&id=1U5M5HVLfI53VkShWLyPKtZjtkTfAMJ7t" class="slide active">
+  <img src="https://drive.google.com/uc?export=view&id=1U9DVenO4HW5XXBzi8Kk5iNu2Gy9hUMHU" class="slide">
+  <!-- أضف بقية الصور بنفس الطريقة -->
+  <img src="https://drive.google.com/uc?export=view&id=1TiLqpvbLtuuNQVjzmgGJH_JmjIviZZoT" class="slide">
+</div>
+
+<style>
+  .slider { position: relative; width: 100%; height: 300px; overflow: hidden; }
+  .slide { position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; opacity: 0; transition: opacity 1s ease-in-out; }
+  .slide.active { opacity: 1; }
+</style>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let idx = 0;
+  setInterval(() => {
+    slides[idx].classList.remove('active');
+    idx = (idx + 1) % slides.length;
+    slides[idx].classList.add('active');
+  }, 4000);
+</script>  
  div.slider 
   <nav>
     <a href="#services">الخدمات</a>
