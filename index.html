@@ -6,14 +6,13 @@
   <title>ste SOUS TAZA TRANS</title>
   <style>
     body {margin:0;font-family:sans-serif;background:#fff;color:#000;direction:rtl;line-height:1.6;}
-    header {background: linear-gradient(90deg,#28a745,#fff,#dc3545);color:#fff;text-align:center;padding:30px 20px;}
+    header {background: #28a745; color:#fff; text-align:center; padding:30px 20px;}
     header h1 {margin:0;font-size:2em;}
-    header p {font-size:1.1em;color:#000;}
+    header p {font-size:1.1em;color:#fff;}
 
-    /* Slider */
-    .slider { position: relative; width: 100%; height: 280px; overflow: hidden; }
-    .slider img { position: absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1s ease-in-out; }
-    .slider img.active { opacity:1; }
+    .slider {position: relative; width: 100%; height: 280px; overflow: hidden;}
+    .slider img {position: absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1s ease-in-out;}
+    .slider img.active {opacity:1;}
 
     nav {background:#333;padding:10px;text-align:center;position:sticky;top:0;z-index:100;}
     nav a {color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;font-size:0.9em;}
@@ -24,6 +23,7 @@
     .social {margin-top:15px;display:flex;justify-content:center;gap:15px;}
     .social a {font-size:1.5em;color:#333;text-decoration:none;}
     footer {text-align:center;padding:20px;background:#f1f1f1;font-size:0.9em;}
+    .map {margin-top:30px;}
 
     @media (max-width:600px) {
       header h1 {font-size:1.5em;}
@@ -35,28 +35,22 @@
 <body>
 
   <header>
-    <div style="font-size:4em;"> <a href='' target='_blank'></a></div>
+    <div style="font-size:3em;">🟢 🚚</div>
     <h1>ste SOUS TAZA TRANS</h1>
     <p>نقل موثوق وخدمات لوجيستية محترفة</p>
   </header>
 
   <div class="slider">
-    <img src="https://i.postimg.cc/kMxPb993/sticker-1675707090175.png" class="active">
-    <img src="https://i.postimg.cc/ZKCFHt2b/IMG-20230120-183234.jpg">
-    <img src="https://i.postimg.cc/L6cfVqjD/IMG-20230719-085212.jpg">
-    <img src="https://i.postimg.cc/XJPX7h8L/IMG-20230924-190241.jpg">
-    <img src="https://i.postimg.cc/D0VJPHXZ/IMG-20220816-000638.png">
-    <img src="https://i.postimg.cc/RZC3dcNc/IMG-20200421-233909-517.jpg">
-    <img src="https://i.postimg.cc/NjP0xZhc/IMG-20231005-120152.jpg">
-    <img src="https://i.postimg.cc/wM6HzkK2/IMG-20220319-224819.jpg">
-    <img src="https://i.postimg.cc/65qJhqB8/IMG-20221102-110416.jpg">
-    <img src="https://i.postimg.cc/cLtpVzgZ/IMG-20241227-134329.jpg">
+    <img src="https://i.postimg.cc/tTpyZrj4/slide1.jpg" class="active">
+    <img src="https://i.postimg.cc/NFQ7Ct1D/slide2.jpg">
+    <img src="https://i.postimg.cc/HL6qvvk3/slide3.jpg">
   </div>
 
   <nav>
     <a href="#services">الخدمات</a>
     <a href="#about">من نحن</a>
     <a href="#contact">تواصل معنا</a>
+    <a href="#order">طلب خدمة</a>
   </nav>
 
   <section id="services">
@@ -82,6 +76,19 @@
       <a href="https://www.instagram.com/soustazatrans" target="_blank">📸</a>
       <a href="https://www.tiktok.com/@mohammed_sous_taza" target="_blank">🎵</a>
     </div>
+
+    <div class="map">
+      <h3>موقعنا على الخريطة:</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5326.648748916878!2d-3.296462546463852!3d34.20525670530233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd787ced0d51c69d%3A0x1583d4dd3cbb2140!2z2KfZhNmF2YjYp9mF2Kkg2KfZhNmF2YjYp9mF2Yog2KfZhNmF2YjYp9mF2KfZhtmK2Kc!5e0!3m2!1sar!2sma!4v1719417468007" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>طلب خدمة</h2>
+    <p>ضغط على الزر أسفله وراسلنا عبر واتساب:</p>
+    <a href="https://wa.me/212661396262?text=السلام%20عليكم%2C%20بغيت%20نطلب%20خدمة%20من%20شركة%20Taza%20Trans.%20الإسم%3A%20_____%2C%20الخدمة%3A%20_____%2C%20العنوان%3A%20_____" target="_blank">
+      <button class="contact button">📦 أطلب الخدمة الآن</button>
+    </a>
   </section>
 
   <footer>
