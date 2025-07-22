@@ -214,55 +214,6 @@ flexibility(document.documentElement);
  </head> 
 
 <body itemtype="https://schema.org/WebPage" itemscope class="rtl home wp-singular page-template-default page page-id-24 wp-theme-astra ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra esm-default ast-header-break-point ast-page-builder-template ast-no-sidebar astra-4.11.5 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-kit-6 elementor-page elementor-page-24 e--ua-isTouchDevice e--ua-blink e--ua-webkit" style="" data-elementor-device-mode="mobile"> 
-	<div class="slider">
-  <img class="slide" src="https://source.unsplash.com/1600x500/?truck" />
-  <img class="slide" src="https://source.unsplash.com/1600x500/?transport" />
-  <img class="slide" src="https://source.unsplash.com/1600x500/?logistics" />
-</div>
-
-<style>
-  .slider {
-    position: relative;
-    width: 100%;
-    max-height: 400px;
-    overflow: hidden;
-  }
-
-  .slide {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-
-  .slide.active {
-    opacity: 1;
-    position: relative;
-  }
-</style>
-
-<script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll(".slide");
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove("active");
-      if (i === index) {
-        slide.classList.add("active");
-      }
-    });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  showSlide(currentSlide);
-  setInterval(nextSlide, 3000); // كل 3 ثواني تتبدل الصورة
-</script>
   <a class="skip-link screen-reader-text" href="#content" title="تخطي إلى المحتوى"> تخطي إلى المحتوى</a> 
   <div class="hfeed site" id="page"> 
    <header id="masthead" itemscope itemtype="https://schema.org/WPHeader"> 
@@ -280,7 +231,7 @@ flexibility(document.documentElement);
        <div class="elementor-element elementor-element-5a42f99 e-con-full e-flex e-con e-child" data-id="5a42f99" data-element_type="container"> 
         <div class="elementor-element elementor-element-e63d2c5 elementor-widget elementor-widget-image" data-id="e63d2c5" data-element_type="widget" data-widget_type="image.default"> 
          <div class="elementor-widget-container"> 
-          <img fetchpriority="high" width="310" height="306" src="https://i.postimg.cc/NMcpCJTN/IMG-20230206-190818.png" class="attachment-large size-large wp-image-102" alt="" srcset="https://united-jordanian.com/wp-content/uploads/2024/08/WhatsApp_Image_2024-08-26_at_15.58.44_a7c92363-removebg-preview-e1724853357220.png 310w, https://united-jordanian.com/wp-content/uploads/2024/08/WhatsApp_Image_2024-08-26_at_15.58.44_a7c92363-removebg-preview-e1724853357220-300x296.png 300w" sizes="(max-width: 310px) 100vw, 310px"> 
+          <img fetchpriority="high" width="310" height="306" src="https://i.postimg.cc/qBPVrF66/sticker-1675707090175.png" class="attachment-large size-large wp-image-102" alt="" srcset="https://i.postimg.cc/qBPVrF66/sticker-1675707090175.png 310w, https://i.postimg.cc/qBPVrF66/sticker-1675707090175.png 300w" sizes="(max-width: 310px) 100vw, 310px"> 
          </div> 
         </div> 
        </div> 
