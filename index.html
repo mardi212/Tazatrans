@@ -212,7 +212,57 @@ flexibility(document.documentElement);
 
 		</style> 
  </head> 
- <body itemtype="https://schema.org/WebPage" itemscope class="rtl home wp-singular page-template-default page page-id-24 wp-theme-astra ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra esm-default ast-header-break-point ast-page-builder-template ast-no-sidebar astra-4.11.5 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-kit-6 elementor-page elementor-page-24 e--ua-isTouchDevice e--ua-blink e--ua-webkit" style="" data-elementor-device-mode="mobile"> 
+
+<body itemtype="https://schema.org/WebPage" itemscope class="rtl home wp-singular page-template-default page page-id-24 wp-theme-astra ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra esm-default ast-header-break-point ast-page-builder-template ast-no-sidebar astra-4.11.5 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-kit-6 elementor-page elementor-page-24 e--ua-isTouchDevice e--ua-blink e--ua-webkit" style="" data-elementor-device-mode="mobile"> 
+	<div class="slider">
+  <img class="slide" src="https://source.unsplash.com/1600x500/?truck" />
+  <img class="slide" src="https://source.unsplash.com/1600x500/?transport" />
+  <img class="slide" src="https://source.unsplash.com/1600x500/?logistics" />
+</div>
+
+<style>
+  .slider {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+  }
+
+  .slide {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slide.active {
+    opacity: 1;
+    position: relative;
+  }
+</style>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) {
+        slide.classList.add("active");
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
+  setInterval(nextSlide, 3000); // كل 3 ثواني تتبدل الصورة
+</script>
   <a class="skip-link screen-reader-text" href="#content" title="تخطي إلى المحتوى"> تخطي إلى المحتوى</a> 
   <div class="hfeed site" id="page"> 
    <header id="masthead" itemscope itemtype="https://schema.org/WPHeader"> 
